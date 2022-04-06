@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %} Sign up {% endblock%}
+{% block content%}
+<h1 class="text-center">Login flask</h1>
+<h3 class="text-center">Sign up </h3>
+<form method="POST">
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+        <label for="name">First name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        <label for="passwordConfirm">Password (Confirm)</label>
+        <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Confirm your password">
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+{% endblock%}
